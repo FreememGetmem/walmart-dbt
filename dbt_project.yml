@@ -42,11 +42,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  walmart_dbt_workshop:
+  Walmart_project:
     # Applies to all files under models/example/
-    silver:
-      schema: silver
+    example:
+      +materialized: table
+    silver: 
       materialized: table
     gold:
-      schema: gold
       materialized: view
